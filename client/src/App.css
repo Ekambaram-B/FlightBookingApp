@@ -1,0 +1,162 @@
+/* Base container for all sections */
+.container {
+  background-color: #f9f9f9;
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  align-items: center;
+}
+/* Style the form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Grouping inputs in a row */
+.input-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.input-row input[type="text"],
+.input-row input[type="date"] {
+  flex: 1;
+  min-width: 45%;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Checkbox styling */
+label {
+  font-weight: 500;
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+/* Submit button */
+button[type="submit"],
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Flight cards */
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.flight-card:hover {
+  background-color: #e6f2ff;
+  transform: translateY(-2px);
+}
+
+.flight-card.selected {
+  background-color: #d0ebff;
+  border-color: #339af0;
+}
+
+/* Booking card */
+.card {
+  background-color: #f0f8ff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #dde;
+}
+
+/* Success message */
+.success {
+  padding: 15px;
+  background: #e0ffe0;
+  border: 1px solid #88cc88;
+  border-radius: 6px;
+}
+
+/* Page headers */
+h2,
+h3,
+h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.sort-container {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f5f9ff;
+  border-radius: 8px;
+  border: 1px solid #dceeff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-btn {
+  background-color: #e0f0ff;
+  border: 1px solid #b3d7ff;
+  color: #0056b3;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sort-btn:hover {
+  background-color: #d0eaff;
+}
+
+.sort-status {
+  margin-left: auto;
+  font-style: italic;
+  color: #444;
+}
